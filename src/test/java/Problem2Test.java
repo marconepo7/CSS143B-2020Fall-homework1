@@ -8,7 +8,28 @@ public class Problem2Test {
     // Okay to change
     @Test
     public void testBubbleSort() {
-        assertTrue(false);
+        int inputs[][] = {
+                {3, 2, 7, 4, 8},
+                {5, 4, 3, 2, 1},
+                {23, 63, 26, 87, 57},
+                {8, 4},
+                {7, 7, 7, 4, 4,},
+
+        };
+        int answer[][] ={
+                {2, 3, 4, 7, 8},
+                {1, 2, 3, 4, 5},
+                {23, 26, 57, 63, 77},
+                {4, 8},
+                {4, 4, 7, 7, 7,},
+
+        };
+        assertEquals(inputs.length, answer.length);
+
+        for (int i=0; i<inputs.length; i++) {
+            int [] expected = answer[i];
+            assertEquals(expected[i], inputs[i]);
+
         // add your tests here
     }
-}
+}}
